@@ -1,0 +1,84 @@
+=======Students
+
+DROP TABLE students;
+
+CREATE TABLE students  
+( studentid NUMBER(10) NOT NULL,  
+  cwid NVARCHAR2(50) NOT NULL,
+  courseid NUMBER(10) NOT NULL,
+  firstname NVARCHAR2(200) NOT NULL,
+  lastname NVARCHAR2(200),
+  emailid NVARCHAR2(200),
+  remarks NVARCHAR2(500),  
+  CONSTRAINT students_pk PRIMARY KEY(studentid)  
+);  
+
+ALTER TABLE students ADD CONSTRAINT
+   student_fk_courseid FOREIGN KEY (courseid)
+REFERENCES
+   courses (courseid)
+initially deferred deferrable;
+
+DROP SEQUENCE studentid;
+
+CREATE SEQUENCE studentid
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+
+=========Courses
+
+
+ 
+ 
+ CREATE TABLE courses  
+( courseid NUMBER(10) NOT NULL,  
+  courseno NVARCHAR2(50) NOT NULL,
+  name NVARCHAR2(200) NOT NULL,
+  term NVARCHAR2(200) NOT NULL,
+  startdate DATE,
+  enddate DATE,
+  location NVARCHAR2(300),  
+  time NVARCHAR2(200),
+  remarks NVARCHAR2(500),
+  status NVARCHAR2(50),
+  CONSTRAINT courses_pk PRIMARY KEY(courseid)  
+);  
+
+CREATE SEQUENCE courseid
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+ ===============Events
+ 
+ DROP TABLE events;
+ 
+  CREATE TABLE events  
+( eventid NUMBER(10) NOT NULL,  
+  courseid NUMBER(10) NOT NULL,
+  eventtype NVARCHAR2(50) NOT NULL,
+  name NVARCHAR2(200) NOT NULL,
+  description NVARCHAR2(300),
+  startdate DATE NOT NULL,
+  enddate DATE NOT NULL,  
+  createdate DATE,
+  remarks NVARCHAR2(500),
+  CONSTRAINT events_pk PRIMARY KEY(eventid)  
+);  
+
+DROP SEQUENCE eventid;
+
+CREATE SEQUENCE eventid
+ START WITH     1
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+ 
+ ALTER TABLE events ADD CONSTRAINT
+   events_fk_courseid FOREIGN KEY (courseid)
+REFERENCES
+   courses (courseid)
+initially deferred deferrable;

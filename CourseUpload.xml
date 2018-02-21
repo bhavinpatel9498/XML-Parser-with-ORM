@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<uploadxml>
+	<head>
+		<entitytype>Course</entitytype>
+	</head>
+	<body>
+		<course>
+			<courseid>0</courseid>
+			<courseno>ITM510</courseno>
+			<name>BASIC JAVA</name>
+			<term>FALL2017</term>    
+			<startdate>2017-08-21</startdate>
+			<enddate>2017-11-30</enddate>
+			<location>PK-115</location>
+			<time>11:25AM-12:40PM</time>
+			<remarks>JAVA CLASSS</remarks>
+			<status>ACTIVE</status>			
+		</course>
+		<course>
+			<courseid>0</courseid>
+			<courseno>ITM515</courseno>
+			<name>ADVANCE JAVA</name>
+			<term>FALL2017</term>    
+			<startdate>2017-08-21</startdate>
+			<enddate>2017-11-30</enddate>
+			<location>PK-115</location>
+			<time>3:15PM-4:30PM</time>
+			<remarks>ADVANCE JAVA CLASSS</remarks>
+			<status>ACTIVE</status>			
+		</course>
+	</body>
+</uploadxml>

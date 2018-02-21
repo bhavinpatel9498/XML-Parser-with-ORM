@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<uploadxml>
+	<head>
+		<entitytype>Action</entitytype>
+	</head>
+	<body>
+		<action>
+			<actionid>0</actionid>
+			<courseid>4</courseid>
+			<name>DOUBT</name>
+			<description>MW THRADE DEMO</description>
+			<actionon>PROF</actionon>
+			<createdate>2017-09-15T15:30:00</createdate>
+			<actionbydate>2017-09-18T15:15:00</actionbydate>
+			<remarks>DEMO SOLUTION UPLOAD</remarks>
+		</action>
+		<action>
+			<actionid>0</actionid>
+			<courseid>4</courseid>
+			<name>DOUBT2</name>
+			<description>ASSIGNMENT1 DOUBTS</description>
+			<actionon>PROF</actionon>
+			<createdate>2017-09-15T15:30:00</createdate>
+			<actionbydate>2017-09-18T15:15:00</actionbydate>
+			<remarks>GUIDELINES ABOUT ASSIGNMENT</remarks>
+		</action>
+		<action>
+			<actionid>0</actionid>
+			<courseid>4</courseid>
+			<name>QUERY</name>
+			<description>PROJECT RELATED</description>
+			<actionon>PROF</actionon>
+			<createdate>2017-09-15T15:30:00</createdate>
+			<actionbydate>2017-09-18T15:15:00</actionbydate>
+			<remarks>SAMPLE REQUIREMENTS</remarks>
+		</action>
+	</body>
+</uploadxml>

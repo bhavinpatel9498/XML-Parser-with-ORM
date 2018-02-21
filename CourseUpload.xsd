@@ -1,0 +1,35 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+   <xs:element name = 'uploadxml'>
+      <xs:complexType>
+         <xs:sequence>
+             <xs:element name = 'head' type = 'headtype' minOccurs = '1' maxOccurs = '1' />
+			 <xs:element name = 'body' type = 'bodytype' minOccurs = '1' maxOccurs = '1' />			
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+      <xs:complexType name = "headtype">
+		  <xs:sequence>
+			 <xs:element name = "entitytype" type = "xs:string" minOccurs = '1' maxOccurs = '1' />
+		  </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name = "bodytype">
+		  <xs:sequence>
+			  <xs:element name = 'course' type = 'coursetype' minOccurs = '0' maxOccurs = 'unbounded' />
+		  </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name = "coursetype">
+		<xs:sequence>
+			<xs:element name = "courseid" type = "xs:integer" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "courseno" type = "xs:string" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "name" type = "xs:string" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "term" type = "xs:string" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "startdate" type = "xs:date"  minOccurs = '0' maxOccurs = '1'/>
+			<xs:element name = "enddate" type = "xs:date" minOccurs = '0' maxOccurs = '1' />
+			<xs:element name = "location" type = "xs:string" minOccurs = '0' maxOccurs = '1' />	
+			<xs:element name = "time" type = "xs:string" minOccurs = '0' maxOccurs = '1' />
+			<xs:element name = "remarks" type = "xs:string" minOccurs = '0' maxOccurs = '1' />
+			<xs:element name = "status" type = "xs:string" minOccurs = '0' maxOccurs = '1' />			
+		</xs:sequence>      
+   </xs:complexType>			 
+</xs:schema>

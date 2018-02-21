@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<uploadxml>
+	<head>
+		<entitytype>Event</entitytype>
+	</head>
+	<body>
+		<event>
+			<eventid>0</eventid>
+			<courseid>4</courseid>
+			<eventtype>ASSIGNMENT</eventtype>
+			<name>ASSIGNMENT1</name>    
+			<description>MULTi THREAD ASSIGNMENT</description>
+			<startdate>2017-09-10T00:00:00</startdate>
+			<enddate>2017-09-15T23:59:59</enddate>
+			<!--<createdate>2017-09-10T00:00:00</createdate>-->
+			<remarks>ASSIGNMENT GRADES: 20</remarks>
+		</event>
+		<event>
+			<eventid>0</eventid>
+			<courseid>4</courseid>
+			<eventtype>EXAM</eventtype>
+			<name>MID TERM EXAM</name>    
+			<!--<description>MID TERM EXAM</description>-->
+			<startdate>2017-10-19T15:15:00</startdate>
+			<enddate>2017-10-19T16:30:00</enddate>
+			<createdate>2017-10-10T00:00:00</createdate>
+			<!--<remarks>TOTAL POINTS POSSIBLE: 100</remarks>-->
+		</event>
+		<event>
+			<eventid>0</eventid>
+			<courseid>4</courseid>
+			<eventtype>EXAM</eventtype>
+			<name>FINAL EXAM</name>    
+			<description></description>
+			<startdate>2017-12-07T15:15:00</startdate>
+			<enddate>2017-12-07T17:15:00</enddate>
+			<createdate>2017-10-10T00:00:00</createdate>
+			<remarks/>
+		</event>
+	</body>
+</uploadxml>

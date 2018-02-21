@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<uploadxml>
+	<head>
+		<entitytype>Professor</entitytype>
+	</head>
+	<body>
+	<professor>
+		<professorid>0</professorid>
+		<firstname>P FNAME</firstname>
+		<lastname>P L NAME</lastname>
+		<emailid>abc@hawk.iit</emailid>
+		<phonenumber>1234</phonenumber>
+		<remarks></remarks>
+		<status>ACTIVE</status>
+	</professor>
+	<professor>
+		<professorid>0</professorid>
+		<firstname>P FNAME1</firstname>
+		<lastname>P L NAME2</lastname>
+		<emailid>abc1@hawk.iit</emailid>
+		<phonenumber>323232</phonenumber>
+		<remarks></remarks>
+		<status>INACTIVE</status>
+	</professor>
+		<professor>
+		<professorid>5</professorid>
+		<firstname>P FNAME55</firstname>
+		<lastname>P L NAME55</lastname>
+		<emailid>abc52@hawk.iit</emailid>
+		<phonenumber>1234243234</phonenumber>
+		<remarks>AAA</remarks>
+		<status>ACTIVE</status>
+	</professor>
+	</body>
+</uploadxml>

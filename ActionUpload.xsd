@@ -1,0 +1,33 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+   <xs:element name = 'uploadxml'>
+      <xs:complexType>
+         <xs:sequence>
+             <xs:element name = 'head' type = 'headtype' minOccurs = '1' maxOccurs = '1' />
+			 <xs:element name = 'body' type = 'bodytype' minOccurs = '1' maxOccurs = '1' />			
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+      <xs:complexType name = "headtype">
+		  <xs:sequence>
+			 <xs:element name = "entitytype" type = "xs:string" minOccurs = '1' maxOccurs = '1' />
+		  </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name = "bodytype">
+		  <xs:sequence>
+			  <xs:element name = 'action' type = 'actiontype' minOccurs = '0' maxOccurs = 'unbounded' />
+		  </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name = "actiontype">
+		<xs:sequence>
+			<xs:element name = "actionid" type = "xs:integer" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "courseid" type = "xs:integer" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "name" type = "xs:string" minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "description" type = "xs:string" minOccurs = '0' maxOccurs = '1'/>
+			<xs:element name = "actionon" type = "xs:string"  minOccurs = '1' maxOccurs = '1'/>
+			<xs:element name = "createdate" type = "xs:dateTime" minOccurs = '1' maxOccurs = '1' />
+			<xs:element name = "actionbydate" type = "xs:dateTime" minOccurs = '1' maxOccurs = '1' />	
+			<xs:element name = "remarks" type = "xs:string" minOccurs = '0' maxOccurs = '1' />
+		</xs:sequence>      
+   </xs:complexType>			 
+</xs:schema>

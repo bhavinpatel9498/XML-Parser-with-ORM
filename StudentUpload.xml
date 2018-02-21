@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<uploadxml>
+	<head>
+		<entitytype>Student</entitytype>
+	</head>
+	<body>
+		<student>
+			<studentid>0</studentid>
+			<cwid>A111</cwid>
+			<courseid>4</courseid>
+			<firstname>FNAME1</firstname>    
+			<lastname>LNAME1</lastname>
+			<emailid>fname1@hawk.iit.edu</emailid>
+			<remarks>THIS IS A DUMMY STUDENT 111</remarks>			
+		</student>
+		<student>	 
+			<studentid>0</studentid>
+			<cwid>A44</cwid>
+			<courseid>4</courseid>
+			<firstname>FNAME1111</firstname>
+			<lastname>LNAME12222555</lastname>
+			<emailid>fname2@hawk.iit.edu</emailid>
+			<remarks>THIS IS A DUMMY STUDENT 2525</remarks>
+		</student>
+		<student>   
+			<studentid>0</studentid>
+			<cwid>A333</cwid>
+			<courseid>4</courseid>
+			<firstname>FNAME1</firstname>
+			<lastname>LNAME1</lastname>
+			<emailid>fname3@hawk.iit.edu</emailid>
+			<remarks>THIS IS A DUMMY STUDENT 333</remarks>
+		</student>
+	</body>
+</uploadxml>
